@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+  <body>
+
+    <form action="/signup" method='POST' style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label><b>Username</b>
+            <input type="text" placeholder="Enter Username" name="username" value='{{username}}' required>
+          </label>
+          <p class="error">{{username_error}}</p>
+          <label><b>Email</b>
+            <input type="text" placeholder="Enter Email" name="email" value='{{email}}' required>
+          </label>
+          <p class="error">{{email_error}}</p>
+          <label><b>Password</b>
+            <input type="password" placeholder="Enter Password" name="psw" value='{{password}}' required>
+          </label>
+          <p class="error">{{password_error}}</p>
+          <label><b>Repeat Password</b>
+           <input type="password" placeholder="Repeat Password" name="psw-repeat" value='{{password2}}' required>
+          </label>
+          <p class ="error">{{password_error2}}</p>
+          <br/>
+          
+          <input type="submit" value="Validate" />
+          
+        </div>
+      </form>
+
+
+
+  </body>
+</html>
